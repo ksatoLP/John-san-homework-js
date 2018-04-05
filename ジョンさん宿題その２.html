@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+
+     function recognizeInput(){
+     	var retriveOutput = document.getElementById("output")
+     	var inputstr1=document.getElementById("inputcolumn");
+     	var newTag = document.createElement("div");
+     	newTag.innerHTML = inputstr1.value;
+     	retriveOutput.appendChild(newTag);
+     	inputstr1.value = "";
+
+
+     }
+	</script>
+
+	<title>ジョンさん宿題その２</title>
+	
+</head>
+<body>
+	<h1>ジョンさん宿題その２</h1>
+	
+	入力：<input type="text" id="inputcolumn" value=""><br>
+	<input type="button" value="クリック" onclick="recognizeInput()"><br>
+
+
+	<div id="output">
+	
+
+	</div>
+	</script>	
+
+
+
+</body>
+</html>

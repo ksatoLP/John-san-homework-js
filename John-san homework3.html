@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+
+		
+
+		function ShowSumNUmber(){
+			var regexp = /[12345678910]/
+			var retriveOutput = document.getElementById("output")
+			var inputstr1 = document.getElementById("inputcolumn");
+			console.log(inputstr1.value);
+			console.log (typeof inputstr1.value) ;
+
+
+			if ( inputstr1.value.match(regexp)) {
+				var int_inputstr1 = parseInt(inputstr1.value);
+				console.log('this is interger')
+
+				for (var i = 0; i < int_inputstr1 ; i++) {
+					listtocurrentval = [];
+					console.log(i)
+
+				}
+
+			} else  {
+				alert("pleae put number here !!!")
+			}
+			retriveOutput.innerHTML = inputstr1.value;
+			inputstr1.value = ' '
+		};
+	</script>
+
+	<title>ジョンさん宿題その3</title>
+	
+</head>
+<body>
+	<h1>ジョンさん宿題その3</h1>
+	
+	入力：<input type="text" id="inputcolumn" value=""><br>
+	<input type="button" value="クリック" onclick="ShowSumNUmber()"><br>
+
+
+	<div id="output">
+	
+
+	</div>
+	</script>	
+</body>
+</html>
