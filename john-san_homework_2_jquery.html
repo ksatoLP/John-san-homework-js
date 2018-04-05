@@ -1,37 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>ジョンさん宿題その２	jquery version</title>
 
-     function recognizeInput(){
-     	var retriveOutput = $('#output').text();
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript">
 
-     	var inputstr1=document.getElementById("inputcolumn");
-     	var newTag = document.createElement("div");
-     	newTag.innerHTML = inputstr1.value;
-     	retriveOutput.appendChild(newTag);
-     	inputstr1.value = "";
-     }
+		$(document).ready(function () {
+	      $("#Button1").click(function () {
+	        inputText = $("#Textbox").val();
+	        $("#output").append("<div>" + inputText + "</div>");
+	        $("#Textbox").val('');
+
+	       
+	      })
+	    });
 	</script>
-
-	<title>ジョンさん宿題その２ jquery version </title>
-	
 </head>
+
 <body>
-	<h1>ジョンさん宿題その２ jquery version </h1>
-	
-	入力：<input type="text" id="inputcolumn" value=""><br>
-	<input type="button" value="クリック" onclick="recognizeInput()"><br>
-
-
-	<div id="output">
-	
-
-	</div>
-	</script>	
-
-
-
+	<p>ジョンさん宿題その２	jquery version</p>
+	<input id="Textbox" type="text" value=" ">
+	<input id="Button1" type="button" value="button">
+	<div id="output"></div>
 </body>
 </html>
